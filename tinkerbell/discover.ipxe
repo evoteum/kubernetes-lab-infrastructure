@@ -1,0 +1,7 @@
+#!ipxe
+dhcp
+set base-url http://192.168.8.10:8080/tinkerbell
+kernel ${base-url}/vmlinuz
+initrd ${base-url}/initramfs.img
+imgargs vmlinuz initrd=initramfs.img console=ttyS0 tink_worker
+boot

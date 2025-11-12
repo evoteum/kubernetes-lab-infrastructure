@@ -35,25 +35,17 @@ Long lived infrastructure that the cluster depends on.
 [//]: # (Must not have its own title)
 [//]: # (A detailed description of the repo)
 
-
+Configures metal, so cannot be run in GitHub actions. Must be run manually from within the LAN. 
 
 ## Table of Contents
 
 [//]: # (REQUIRED)
-[//]: # (Delete as appropriate)
+[//]: # (TOCGEN_TABLE_OF_CONTENTS_START)
 
-1. [Security](#security)
-1. [Background](#background)
-1. [Install](#install)
-1. [Usage](#usage)
-1. [Any extra sections as required]
-1. [Documentation](#documentation)
-1. [Repository Configuration](#repository-configuration)
-1. [API](#api)
-1. [Maintainers](#maintainers)
-1. [Thanks](#thanks)
-1. [Contributing](#contributing)
-1. [License](#license)
+[//]: # (Table of contents will be automatically generated and inserted here.)
+
+[//]: # (TOCGEN_TABLE_OF_CONTENTS_END)
+
 
 [//]: # (## Security)
 [//]: # (OPTIONAL)
