@@ -1,4 +1,11 @@
 terraform {
+  required_version = "1.9.0"
+  backend "s3" {
+    # Values to be provided by env vars, see readme
+    bucket = ""
+    key    = ""
+    region = ""
+  }
   required_providers {
     unifi = {
       source  = "paultyng/unifi"
@@ -8,8 +15,8 @@ terraform {
 }
 
 provider "unifi" {
-  # username = var.username # optionally use UNIFI_USERNAME env var
-  # password = var.password # optionally use UNIFI_PASSWORD env var
+  # use UNIFI_USERNAME env var
+  # use UNIFI_PASSWORD env var
   api_url = "https://unifi" # optionally use UNIFI_API env var
 
   # you may need to allow insecure TLS communications unless you have configured
