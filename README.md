@@ -69,7 +69,18 @@ Configures metal, so cannot be run in GitHub actions. Must be run manually from 
 [//]: # (REQUIRED)
 [//]: # (Explain what the thing does. Use screenshots and/or videos.)
 
+To apply an OpenTofu plan:
 
+```shell
+export UNIFI_USERNAME=[your username]
+export UNIFI_PASSWORD=[your password]
+export TF_BACKEND_BUCKET=[the name of the state bucket]
+export TF_BACKEND_REGION=[the region of the state bucket]
+export TF_BACKEND_KEY="kubernetes-lab-infrastructure/development/tofu.tfstate"
+cd tofu/development
+tofu init -backend-config="bucket=${TF_BACKEND_BUCKET}" -backend-config="key=${TF_BACKEND_KEY}" -backend-config="region=${TF_BACKEND_REGION}"
+tofu apply
+```
 
 [//]: # (Extra sections)
 [//]: # (OPTIONAL)
